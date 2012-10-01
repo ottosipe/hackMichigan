@@ -1,0 +1,119 @@
+@font-face
+{
+	font-family: Ultramag;
+	src: url('Ultramagnetic.ttf'),
+    url('Ultramagnetic.eot'); /* IE9 need .eot file!? */
+}
+
+@orange: #ff3e00;
+
+h1,h2,h3 {
+	color:@orange;
+	.upper;
+}
+
+
+body {
+  font: 15px "Ultramag", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color:@orange;
+  text-decoration: none;
+}
+
+.container {
+	margin:0 auto;
+	width:900px;
+}
+
+.nav {
+	.upper;
+	color:@orange;
+	height: 90px;
+	padding: 20px 5px;
+}
+
+.pres {
+	font-size: 18px;
+}
+
+.nav-title {
+	float:left;
+	font-size: 50px;
+}
+
+.nav-sub {
+	float:right;
+	padding-top:55px;
+	font-size: 20px;
+}
+
+.link {
+	padding: 10px;
+	display: inline;
+}
+
+.link:hover {
+	background-color:@orange;
+	color: white;
+	.rounded;
+}
+
+.main {
+	padding: 10px 0px;
+}
+
+.ready {
+	.upper;
+	font-size: 80px;
+	display: inline;
+}
+
+.code {
+	.ready;
+	color:white;
+	background-color: #ff3e00;
+	padding: 0 20px;
+	.rounded;
+}
+
+.info {
+	margin: 40px 0px;
+}
+
+.join {
+	.code;
+	float:left;
+	cursor: pointer;
+}
+
+.join:hover {
+	background-color:white;
+	border: 3px solid @orange;
+	color: @orange;
+}
+
+.sponsor {
+	display: inline;
+	padding:20px;
+}
+
+.sponsors {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+.date {
+	text-align: right;
+	font-size: 30px;
+}
+
+/* MIXINS */
+.rounded {
+	border-radius: 10px;
+}
+
+.upper {
+	text-transform: uppercase;
+}
