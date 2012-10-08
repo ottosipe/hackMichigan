@@ -36,7 +36,7 @@ exports.sponsors = function(req, res){
 
 exports.contact = function(req, res){
  //need page for this
-  res.render('coming', { title: 'Hack Michigan'});
+  res.render('contact', { title: 'Hack Michigan'});
 };
 
 
