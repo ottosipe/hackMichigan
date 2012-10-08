@@ -31,7 +31,7 @@ exports.schedule = function(req, res){
 
 exports.sponsors = function(req, res){
  //need page for this
-  res.render('coming', { title: 'Hack Michigan'});
+  res.render('sponsors', { title: 'Hack Michigan'});
 };
 
 exports.contact = function(req, res){
