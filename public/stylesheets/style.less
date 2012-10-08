@@ -10,11 +10,12 @@
 h1,h2,h3 {
 	color:@orange;
 	.upper;
+	font-weight: lighter;
 }
 
 
 body {
-  font: 15px "Ultramag", Helvetica, Arial, sans-serif;
+  font: 18px "Ultramag", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -40,13 +41,13 @@ a {
 
 .nav-title {
 	float:left;
-	font-size: 50px;
+	font-size: 48px;
 }
 
 .nav-sub {
 	float:right;
 	padding-top:55px;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .link {
@@ -66,7 +67,7 @@ a {
 
 .ready {
 	.upper;
-	font-size: 80px;
+	font-size: 72px;
 	display: inline;
 }
 
@@ -110,9 +111,23 @@ a {
 	font-size: 30px;
 }
 
+.schedule {
+	margin-left: 10px;
+	font-size: 22px;	
+}
+
+td {
+	padding: 3px 10px;	
+}
+
+td:first-child {
+	font-weight: bold;
+	padding-right: 20px;
+}
+
 /* MIXINS */
 .rounded {
-	border-radius: 10px;
+	border-radius: 5px;
 }
 
 .upper {

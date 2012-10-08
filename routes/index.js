@@ -10,19 +10,23 @@ exports.index = function(req, res){
 	// eventually this might be cooler to have change after page load?
 	// easy switch
   res.render('index', { title: 'Hack Michigan', 
-  	info: "The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee." ,
+  	info: "Hack Michigan is Michigan Hackers second hackathon and aims to be the biggest student run hackathon ever held at the University of Michigan. The theme of this hackathon is “impact”. As such, we want each and every team to build something that has an impact on real people. Hack Michigan is scheduled for November 3rd - 4th, and will be held in North Quad. The event will be 28 hours long with 24 hours devoted to hacking." ,
   	verb: verbs[i]
   	});
 };
 
 exports.about = function(req, res){
+	i = Math.floor(Math.random()*verbs.length);
 	//need page for this
-  res.render('coming', { title: 'Hack Michigan'});
+  res.render('about', { title: 'Hack Michigan',
+  	info: "Hack Michigan is Michigan Hackers second hackathon and aims to be the biggest student run hackathon ever held at the University of Michigan. The theme of this hackathon is “impact”. As such, we want each and every team to build something that has an impact on real people. Hack Michigan is scheduled for November 3rd - 4th, and will be held in North Quad. The event will be 28 hours long with 24 hours devoted to hacking." ,
+  	verb: verbs[i]
+  });
 };
 
 exports.schedule = function(req, res){
  	//need page for this
-  res.render('coming', { title: 'Hack Michigan'});
+  res.render('schedule', { title: 'Hack Michigan'});
 };
 
 exports.sponsors = function(req, res){
