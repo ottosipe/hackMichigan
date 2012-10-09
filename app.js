@@ -34,6 +34,7 @@ app.get('/abouts', routes.about);
 app.get('/schedule', routes.schedule);
 app.get('/sponsors', routes.sponsors);
 app.get('/contact', routes.contact);
+app.get('/prizes', routes.prizes);
 
 
 http.createServer(app).listen(app.get('port'), function(){
